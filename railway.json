@@ -1,0 +1,16 @@
+﻿{
+  "build": {
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    }
+  },
+  "deploy": {
+    "startCommand": "python3 main.py"
+  },
+  "crons": [
+    {
+      "schedule": "50 12 * * *",
+      "command": "python3 main.py"
+    }
+  ]
+}
